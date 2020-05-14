@@ -53,6 +53,9 @@
 										<option value="Astrahus" class="option">Astrahus</option>
 										<option value="Athanor" class="option">Athanor</option>
 										<option value="Raitaru" class="option">Raitaru</option>
+										<option value="Fortizar" class="option">Fortizar</option>
+										<option value="Azbel" class="option">Azbel</option>
+										<option value="Tatara" class="option">Tatara</option>
 									</select>
 									<i class="zmdi zmdi-chevron-down"></i>
 							</div>
@@ -84,6 +87,12 @@
 										$('#price').text('300m ISK');
 									} else if ($("#citadelType option:selected").text() == "Athanor") {
 										$('#price').text('400m ISK');
+									} else if ($("#citadelType option:selected").text() == "Fortizar") {
+										$('#price').text('6b ISK');
+									} else if ($("#citadelType option:selected").text() == "Azbel") {
+										$('#price').text('2.5b ISK');
+									} else if ($("#citadelType option:selected").text() == "Tatara") {
+										$('#price').text('4b ISK');
 									}
 								});
 							</script>
