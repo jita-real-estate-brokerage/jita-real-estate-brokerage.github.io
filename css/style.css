@@ -97,7 +97,7 @@ h3 {
 .info-item {
   margin-bottom: 29px; }
   .info-item span {
-    color: #ccc; }
+    color: #fff; }
     .info-item span.unit {
       margin-right: 15px; }
     .info-item span.lnr {
@@ -117,7 +117,7 @@ h3 {
     width: 34.54%; }
 
 label {
-  color: #ccc; }
+  color: #fff; }
 
 .form-wrapper {
   display: flex;
@@ -215,7 +215,7 @@ select.form-control {
   line-height: 2;
   margin-top: 23px; }
   .question-request span {
-    color: #ccc; }
+    color: #fff; }
   .question-request input.form-control {
     width: 56px;
     margin: 0 2px;
@@ -248,7 +248,7 @@ select.form-control {
     opacity: 0;
     cursor: pointer; }
   .checkbox input:checked ~ .checkmark {
-    background: #ccc; }
+    background: #fff; }
     .checkbox input:checked ~ .checkmark:after {
       display: block; }
   .checkbox .checkmark {
@@ -257,7 +257,7 @@ select.form-control {
     left: 0;
     height: 11px;
     width: 11px;
-    border: 1px solid #ccc;
+    border: 1px solid #fff;
     border-radius: 50%;
     font-family: Material-Design-Iconic-Font;
     color: #49276c;

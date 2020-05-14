@@ -110,7 +110,7 @@ h3 {
 .info-item {
 	margin-bottom: 29px;
 	span {
-		color: #ccc;
+		color: #fff;
 		&.unit {
 			margin-right: 15px;
 		}
@@ -136,7 +136,7 @@ h3 {
 	}
 }
 label {
-	color: #ccc;
+	color: #fff;
 }
 .form-wrapper {
 	display: flex;
@@ -251,7 +251,7 @@ select.form-control {
 	line-height: 2;
 	margin-top: 23px;
 	span {
-		color: #ccc;
+		color: #fff;
 	}
 	input.form-control {
 		width: 56px;
@@ -292,7 +292,7 @@ select.form-control {
 	}
 	input:checked {
 		& ~ .checkmark {
-			background: #ccc;
+			background: #fff;
 			&:after {
 				display: block;
 			}
@@ -304,7 +304,7 @@ select.form-control {
 	    left: 0;
 	    height: 11px;
 	    width: 11px;
-	    border: 1px solid #ccc;
+	    border: 1px solid #fff;
 	    border-radius: 50%;
 	    font-family: Material-Design-Iconic-Font;
 	    color: #49276c;
