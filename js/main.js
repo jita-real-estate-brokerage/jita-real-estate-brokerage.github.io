@@ -11,21 +11,36 @@ $(function(){
             next: "Next",
             previous: "Previous"
         },
-        onStepChanging: function (event, currentIndex, newIndex) { 
+        onStepChanging: function (event, currentIndex, newIndex) {
+            var characterName = $('#characterName').val();
+            var citadelType = $("#citadelType option:selected").text();
+
             if ( newIndex >= 1 ) {
                 $('.steps ul li:first-child a .step-arrow').remove();
             } else {
-                $('.steps ul li:first-child a').append('<img src="images/step-arrow.png" alt="" class="step-arrow">');
+                if (characterName != "" && citadelType != "") {
+                    $('.steps ul li:first-child a').append('<img src="images/step-arrow.png" alt="" class="step-arrow">');
+                }
             }
 
             if ( newIndex === 1 ) {
                 $('.steps ul li:nth-child(2) a').append('<img src="images/step-arrow.png" alt="" class="step-arrow">');;
             } else {
-                $('.steps ul li:nth-child(2) a .step-arrow').remove();
+                if (characterName != "" && citadelType != "") {
+                    $('.steps ul li:nth-child(2) a .step-arrow').remove();
+                } else {
+                    swal("", "Please fill at least your character name and the citadel type", "error");
+
+                    return false;
+                }
             }
 
             if ( newIndex === 2 ) {
-                $('.steps ul li:nth-child(3) a').append('<img src="images/step-arrow.png" alt="" class="step-arrow">');;
+                if (characterName != "" && citadelType != "") {
+                    $('.steps ul li:nth-child(3) a').append('<img src="images/step-arrow.png" alt="" class="step-arrow">');
+                } else {
+                    return false;
+                }
             } else {
                 $('.steps ul li:nth-child(3) a .step-arrow').remove();
             }
@@ -51,7 +66,7 @@ $(function(){
             }
 
             if (isFormValid == false) {
-                swal("", "Please fill the missing fields", "error");
+                swal("", "Please fill at least your character name and the citadel type", "error");
             } else {
                 $.ajax({
                     type: 'POST',
@@ -73,14 +88,6 @@ $(function(){
                             description: 'Price: ' + price + '\n'
                                 + 'Contact person: ' + characterName + '\n'
                                 + 'Additional comment: ' + request,
-                            // Link for title and thumbnail.
-                            url: '',
-                            // Decimal number colour of the side of the embed.
-                            color: 11730954,
-                            // Embed image - picture below description (and fields).
-                            image: {
-                                url: ''
-                            },
                         }]
                     }),
                     // Content type.
