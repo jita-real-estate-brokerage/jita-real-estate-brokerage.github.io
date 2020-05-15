@@ -44,9 +44,9 @@ img {
   height: 100vh;
   display: flex; }
   .wrapper .image-holder {
-    width: 65.78%; }
+    width: 60%; }
   .wrapper .form-content {
-    width: 34.22%;
+    width: 40%;
     display: flex;
     flex-direction: column;
     justify-content: center;
