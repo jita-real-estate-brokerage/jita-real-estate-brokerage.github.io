@@ -71,7 +71,7 @@ $(function(){
                 $.ajax({
                     type: 'POST',
                     // The webhook URL.
-                    url: 'https://discordapp.com/api/webhooks/710449444826513480/eEtbTiLNVrRYH7LowCUMRbw5fLT7DK0puHIjLJkAo7wx_iHJj45BBoLhN5vVN9KgVEeJ',
+                    url: 'https://discordapp.com/api/webhooks/712658305419313152/AmCi0duOSB9vg7sEIW_52x-J-arJEs2y2SillolnyZ2XAcgyU1EdGJSCEzeJZv4UWWL8',
                     // Message data.
                     data: JSON.stringify({
                         // The username to be displayed.
